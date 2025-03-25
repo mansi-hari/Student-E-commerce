@@ -25,7 +25,7 @@ import { useEffect } from 'react';
 function App() {
   const token = localStorage.getItem('token'); // Assuming token is stored in localStorage
   
-  // Initialize socket connection only once
+  // Initialize the socket connection only once
   useEffect(() => {
     if (token) {
       initializeSocket(token);
